@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{> header}}
+    <title>Principal</title>
+</head>
+<body>
+    {{> menu}}
+    <br/><br/><br/>
+    <h1>{{site.title}}</h1>
+    <h2>{{site.subtitle}}</h2>
+    {{site.notice}}
+
+    {{#if showWarning}}
+    <p>
+        Aquest missatge es mostra si la variable showWarning es defineix com a True 
+    </p>
+    {{/if}}
+
+</body>
+</html>
