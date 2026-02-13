@@ -1,3 +1,7 @@
+body {
+  background-image: url("image.png");
+  background-size: cover;
+}
 nav {
   display: flex;
   position: sticky;
@@ -30,4 +34,23 @@ a:hover {
   color: white;
   letter-spacing: 3px;
   background:  blue;
+}
+
+li:nth-child(1) {
+  background-color: lightblue;
+}
+
+li:nth-child(2) {
+  background-color: lightgreen;
+}
+
+li:nth-child(3) {
+  background-color: lightcoral;
+}
+
+li:nth-child(4) {
+  background-color: lightgoldenrodyellow;
+}
+li:nth-child(5) {
+  background-color: pink;
 }

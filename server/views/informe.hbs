@@ -7,6 +7,28 @@
 <body>
     {{> menu}}
     <br/><br/><br/>
+    <h1>{{site.title}}</h1>
+    <h2>{{site.subtitle}}</h2>
+    <ul>
+        {{#each cities}}
+        
+        <li>
+            <strong>{{name}}</strong>
+            - {{lookup ../countries country}}
+            – {{population}}
+            {{#if (lte population 800000)}} - Petita
+            {{else}}
+             - Gran
+            {{/if}}
+              {{#if coastal}} - 🌊 Costanera
+            {{else}}
+             - Interior
+            {{/if}}
+          
 
+
+        </li>
+        {{/each}}
+    </ul>    
 </body>
 </html>
